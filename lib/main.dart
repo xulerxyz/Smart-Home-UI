@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:modern_smart_home_ui_practical_01/screens/HomeScreen.dart';
+import 'package:modern_smart_home_ui_practical_01/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
