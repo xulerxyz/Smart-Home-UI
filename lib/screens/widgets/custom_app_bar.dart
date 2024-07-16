@@ -18,14 +18,12 @@ class CustomAppBar extends StatelessWidget {
               const Text(
                 "Manage Home",
                 style: TextStyle(
-                    fontSize: 17.0,
-                    color: Color.fromARGB(255, 128, 140, 152)),
+                    fontSize: 17.0, color: Color.fromARGB(255, 128, 140, 152)),
               ),
               RichText(
                 text: const TextSpan(
                   text: 'Hey, ',
-                  style:
-                      TextStyle(color: Color(0xFF14293C), fontSize: 25),
+                  style: TextStyle(color: Color(0xFF14293C), fontSize: 25),
                   children: [
                     TextSpan(
                         text: 'Nigel 👋',
@@ -38,16 +36,10 @@ class CustomAppBar extends StatelessWidget {
               ),
             ],
           ),
-          Container(
-              width: 50,
-              height: 50,
-              decoration: const BoxDecoration(
-                  color: Color(0xFFCFD8E7), shape: BoxShape.circle),
-              child: const Icon(
-                Icons.person,
-                color: Color(0xFF14293C),
-                size: 40,
-              ))
+          const CircleAvatar(
+            radius: 28,
+            foregroundImage: AssetImage('assets/images/profile.jpg'),
+          )
         ],
       ),
     );
