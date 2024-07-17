@@ -26,7 +26,7 @@ class CustomAppBar extends StatelessWidget {
                   style: TextStyle(color: Color(0xFF14293C), fontSize: 25),
                   children: [
                     TextSpan(
-                        text: 'Nigel 👋',
+                        text: 'Mia 👋',
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Color(0xFF14293C),
