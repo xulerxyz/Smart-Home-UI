@@ -11,4 +11,4 @@ In this project, I successfully created a detailed and visually appealing **Smar
 ![Smart Home Screen](inspiration.png)
 
 ## Outcome
- ![Login Screen](screenshot.png)
+ ![Smart Home Screen](image.png)
