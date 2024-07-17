@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:modern_smart_home_ui_practical_01/screens/data/data.dart';
 import 'package:modern_smart_home_ui_practical_01/screens/widgets/bottom_container.dart';
 import 'package:modern_smart_home_ui_practical_01/screens/widgets/chip_items.dart';
 import 'package:modern_smart_home_ui_practical_01/screens/widgets/custom_app_bar.dart';
@@ -13,75 +14,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List chipList = [
-    [
-      "All Devices",
-      true,
-    ],
-    [
-      "Living Room",
-      false,
-    ],
-    [
-      "Bedroom",
-      false,
-    ],
-    [
-      "Kitchen",
-      false,
-    ],
-  ];
 
-  List gridList = [
-    [
-      "Smart lighting", // type or name
-      "Bedroom", // room
-      Icons.light, // first icon
-      Icons.wifi, // second icon
-      const Color(0xFF00CCD3), // background color
-      false, // switch value
-      Colors.white, // first icon color
-      Colors.white, // second icon color
-      Colors.white, // first text color
-      Colors.white, // other text color
-    ],
-    [
-      "Air Condition",
-      "Living room",
-      Icons.air_rounded,
-      Icons.bluetooth,
-      Colors.white,
-      true,
-      const Color(0xFF08CEC2),
-      const Color(0xFFC7D5E0),
-      const Color(0xFF061E31),
-      const Color(0xFFB7BDC3),
-    ],
-    [
-      "Motion Sensor",
-      "Kitchen",
-      Icons.sensors,
-      Icons.bluetooth,
-      Colors.white,
-      false,
-      const Color(0xFFFE8430),
-      const Color(0xFFC7D5E0),
-      const Color(0xFF061E31),
-      const Color(0xFFB7BDC3),
-    ],
-    [
-      "Desk Lamp",
-      "Office",
-      Icons.lightbulb_circle_outlined,
-      Icons.bluetooth,
-      const Color(0xFF6D3EBE),
-      true,
-      Colors.white,
-      Colors.white,
-      Colors.white,
-      Colors.white,
-    ],
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -106,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
 
             // chips
-            ChipItems(chipList: chipList),
+             ChipItems(chipList: chipList),
 
             const SizedBox(
               height: 30,
