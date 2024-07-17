@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:modern_smart_home_ui_practical_01/screens/widgets/bottom_container.dart';
 import 'package:modern_smart_home_ui_practical_01/screens/widgets/chip_items.dart';
 import 'package:modern_smart_home_ui_practical_01/screens/widgets/custom_app_bar.dart';
 import 'package:modern_smart_home_ui_practical_01/screens/widgets/stats_bar.dart';
@@ -112,7 +113,16 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
 
             // grids
-            gridItems()
+            gridItems(),
+
+            // container
+            const BottomContainer(),
+
+            // add space below
+
+            const SizedBox(
+              height: 30,
+            ),
           ],
         ),
       ),
@@ -178,8 +188,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Text(
                         gridList[index][5] ? "On" : "Off",
-                        style:
-                            TextStyle(color: gridList[index][9], fontSize: 16, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            color: gridList[index][9],
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
                       ),
                       CupertinoSwitch(
                         thumbColor: Colors.white,
